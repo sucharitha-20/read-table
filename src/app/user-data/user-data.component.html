@@ -1,0 +1,19 @@
+<h1> Users Data</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>password</th>
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let i of data">
+        <td>{{i.id}}</td>
+        <td>{{i.name | customePipe:'name'}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.password}}</td>
+        <td>{{i.address | customePipe:'address'}}</td>
+    </tr>
+</table>
